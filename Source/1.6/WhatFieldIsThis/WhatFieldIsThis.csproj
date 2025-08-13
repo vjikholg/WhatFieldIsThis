@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net472</TargetFramework>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<Optimize>true</Optimize>
+		<OutDir>$(MSBuildThisFileDirectory)Assemblies\</OutDir>
+		<LangVersion>latest</LangVersion>
+	</PropertyGroup>
+
+	<!-- Point to your RimWorld install -->
+	<PropertyGroup>
+		<RimWorldDir>G:\SteamLibrary\steamapps\common\RimWorld</RimWorldDir>
+		<UnityManaged>$(RimWorldDir)\RimWorldWin64_Data\Managed</UnityManaged>
+	</PropertyGroup>
+	<ItemGroup>
+	  <PackageReference Include="Krafs.Rimworld.Ref" Version="1.6.4543" />
+	  <PackageReference Include="Lib.Harmony" Version="2.3.6" />
+	</ItemGroup>
+
+</Project>
